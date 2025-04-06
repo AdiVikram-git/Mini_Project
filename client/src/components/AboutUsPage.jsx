@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutUsPage = () => {
+    const navigate = useNavigate();
+    
   return (
     <div className="min-h-screen px-6 py-12 bg-gray-50 text-gray-800">
       <div className="max-w-4xl mx-auto">

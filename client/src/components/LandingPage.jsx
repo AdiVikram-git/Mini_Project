@@ -52,7 +52,13 @@ const LandingPage = () => {
       {/* Navigation */}
       <nav className="bg-[#722f37] sticky top-0 z-50 shadow-md">
         <div className="container mx-auto flex flex-wrap justify-between items-center px-4 text-white text-sm">
-          {["ABOUT US", "DIVISION", "ACT AND RULES", "SCHEMES", "RELATED LINKS"].map((item, index) => (
+          <Link
+            to="/about-us"
+            className="py-3 px-5 hover:bg-[#883944] transition"
+          >
+            ABOUT US
+          </Link>
+          {["DIVISION", "ACT AND RULES", "SCHEMES", "RELATED LINKS"].map((item, index) => (
             <a
               key={index}
               href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
